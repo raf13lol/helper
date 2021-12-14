@@ -3,12 +3,12 @@ package helper;
 class Helper {
 	/**
 		A function that mods your number by a value e.g. 5 mod 3 = 2 as it takes away an amount.
-		@param x The value you want to mod. Must be a int or a float.
-		@param modNum The number which you want to mod x by. Must be a int or a float.
+		@param x The value you want to mod. Must be an int or a float.
+		@param modNum The number which you want to mod x by. Must be an int or a float.
 	**/
 	public static function mod(x:Dynamic, modNum:Dynamic) {
 		var floatX = false;
-		var ret:Dynamic;
+		var ret:Dynamic = 0;
 		if (Std.isOfType(x, Float)) {
 			floatX = true;
 		} else if (Std.isOfType(x, Int)) {
@@ -22,6 +22,26 @@ class Helper {
 		ret = x - (modNum * Math.floor(x / modNum));
 		if (floatX) {
 			ret += x - Math.floor(x);
+		}
+		return ret;
+	}
+
+	/**
+		Multiples of a number with a length and a starter. Can include 0 if allowed.
+		@param num The number to get the multiples from. Must be an int or a float.
+		@param length The length of the returned array with multiples. Must be an int. 
+		@param includesZero Should it include zero at the start? False by default.
+	**/
+	public static function multiples(num:Dynamic, length:Int, includesZero:Bool = false) {
+		var ret:Array<Dynamic> = [];
+		if (Std.isOfType(num, Float)) {} else if (Std.isOfType(num, Int)) {} else {
+			throw "Not a vaild type for num!";
+		}
+		for (i in 0...length) {
+			ret.push(Math.round(num * i));
+		}
+		if (!includesZero) {
+			ret.shift();
 		}
 		return ret;
 	}

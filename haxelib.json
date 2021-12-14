@@ -3,11 +3,12 @@
 	"url": "https://github.com/brosomethingwrongwithyothing/helper",
 	"license": "GPL",
 	"tags": [
-		"helper"
+		"helper",
+		"math"
 	],
-	"description": "HaxeFlixel is a 2D game engine based on OpenFL that delivers cross-platform games.",
-	"version": "1.0.0",
-	"releasenote": "Added Mod() and other stuff.",
+	"description": "Helper is a library that helps with math for now, it will do more in the future!",
+	"version": "1.0.1",
+	"releasenote": "Added multiples().",
 	"contributors": [
 		"RafPlayz69YT"
 	]
