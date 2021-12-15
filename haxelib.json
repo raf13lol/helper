@@ -4,11 +4,13 @@
 	"license": "GPL",
 	"tags": [
 		"helper",
-		"math"
+		"math",
+		"web",
+		"ip"
 	],
-	"description": "Helper is a library that helps with math for now, it will do more in the future!",
-	"version": "1.0.1",
-	"releasenote": "Added multiples().",
+	"description": "Helper is a library that helps with math and web stuff for now.",
+	"version": "1.0.2",
+	"releasenote": "Started making a web class for web help.",
 	"contributors": [
 		"RafPlayz69YT"
 	]
