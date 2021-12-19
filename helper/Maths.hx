@@ -1,6 +1,6 @@
 package helper;
 
-class Helper {
+class Maths {
 	/**
 		A function that mods your number by a value e.g. 5 mod 3 = 2 as it takes away an amount.
 		@param x The value you want to mod. Must be an int or a float.
@@ -45,4 +45,5 @@ class Helper {
 		}
 		return ret;
 	}
+ 
 }

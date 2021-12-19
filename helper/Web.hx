@@ -2,15 +2,14 @@ package helper;
 
 class Web {
 	/**
-		Gets the player's IP. (Only use for web APIs!) Doesn't work if a VPN is on.
+		Returns the player's IP for web APIs. (Can't bypass VPN)
 	**/
-	public static function getIP() {
-		var ip = new haxe.Http("http://ip-api.com/json");
-		ip.onData = function(data) {
-			var ip = haxe.Json.parse(data);
-			return ip.query;
+	static public function getIP() {
+		var ip = new haxe.Http("https://api.myip.com");
+		ip.onData = function ret(data:String) {
+			return haxe.Json.parse(data).ip;
 		}
-		ip.onError = function(err) {
+		ip.onError = function err(err:String) {
 			trace(err);
 			return "Unknown";
 		}

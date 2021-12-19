@@ -6,11 +6,13 @@
 		"helper",
 		"math",
 		"web",
-		"ip"
+		"ip",
+		"filesystem",
+		"zip"
 	],
-	"description": "Helper is a library that helps with math and web stuff for now.",
+	"description": "Helper is a library that helps with math, web and zip for now.",
 	"version": "1.0.2",
-	"releasenote": "Started making a web class for web help.",
+	"releasenote": "Started making a web class for web help. Also extended sys.FileSystem to add zipping and unzipping.",
 	"contributors": [
 		"RafPlayz69YT"
 	]
