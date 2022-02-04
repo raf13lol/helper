@@ -11,8 +11,8 @@
 		"zip"
 	],
 	"description": "Helper is a library that helps with math, web and zip for now.",
-	"version": "1.0.2",
-	"releasenote": "Started making a web class for web help. Also extended sys.FileSystem to add zipping and unzipping.",
+	"version": "1.0.3",
+	"releasenote": "Prime numbers now.",
 	"contributors": [
 		"RafPlayz69YT"
 	]

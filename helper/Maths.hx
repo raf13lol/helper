@@ -45,5 +45,24 @@ class Maths {
 		}
 		return ret;
 	}
- 
+
+	/**
+		Check to see if a number is prime.
+		@param num The number to test to see if it is a prime number. Must be an int.
+	**/
+	public static function isPrime(num:Int):Bool {
+		var ta:Array<Bool> = [];
+		var p = true;
+		var array = [2, 3, 5, 7];
+		for (i in 0...array.length) {
+			if (num == array[i])
+				continue;
+			ta.push(num / array[i] != Math.floor(num / array[i]));
+		}
+		for (i in 0...ta.length) {
+			if (!ta[i] && p)
+				p = false;
+		}
+		return p;
+	}
 }
